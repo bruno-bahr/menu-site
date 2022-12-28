@@ -6,26 +6,34 @@
 }
 
 body{
-    background-color: powderblue;
+    min-height: 100vh;
+    background: linear-gradient(rgb(135, 177, 231), rgb(68, 67, 133) );
 }
 
 ul{
-    margin: 20px 20px;
-    padding: 20;
-    display: inline-flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 ul li{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style: none;
-    padding: 8px 18px;
+  
 }
 
-ul li.title{
-    margin-right: 90px;
+ul img{
+    height: 10vh;
+    border-radius: 50%;
     padding: 01px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5em;
+   
 }
 
 ul li a{
@@ -35,14 +43,15 @@ ul li a{
     font-weight: bold;
     font-size: 1.5em;
     position: relative;
+  
+    
 }
 
 ul li a.menu:hover{
     border-width: 20px;
-    color: ;
     font-size: 1.8em;
     font-weight: bolder;
-    background-color: rgba(0, 139, 139, 0.185);
+    background-color: rgba(16, 44, 201, 0.185);
     
 }
 
@@ -50,7 +59,7 @@ ul li a.menu::before{
     content: '';
     width: 0px;
     height: 5px;
-    background: teal;
+    background: rgba(6, 45, 97, 0.712);
     position: absolute;
     bottom: -10%;
     left: 0%;
